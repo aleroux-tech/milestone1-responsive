@@ -60,6 +60,32 @@ p {
     line-height: 1.6;
 }
 
+.intro {
+    font-style: italic;
+    color: #2f6f4f;
+}
+
+.note {
+    font-weight: bold;
+    color: #b84d6b;
+}
+
+#assignment-details {
+    background-color: #eef7ff;
+    margin: 16px 20px;
+    padding: 20px;
+    border: 2px dashed #2f6f4f;
+}
+
+#assignment-details ul {
+    margin: 12px 0 0 20px;
+    padding: 0;
+}
+
+#assignment-details li {
+    margin-bottom: 8px;
+}
+
 .bonding-time {
     background-color: #fce8e1;
 }
