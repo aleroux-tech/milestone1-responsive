@@ -1,35 +1,52 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<title>My Projects</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-    <body>   
-<header>
-    <h1>My Projects and Work</h1>
-    
-    <img
-  src="assets/images/chatgptfortnitefam.png"
-  alt="A family gaming scene"
-  class="hero-image"
-  loading="eager"
-  decoding="async">
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1>My Projects and Work</h1>
+      <p class="intro">A quick snapshot of recent work, learning goals, and creative projects.</p>
+      <img src="assets/images/chatgptfortnitefam.png" alt="A family gaming scene" class="hero-image" loading="eager" decoding="async">
     </header>
-    <nav><a href="index.html">Home</a> | <a href="projects.html">Projects/Work</a> | <a href="about.html">About/Contact</a></nav>
-  <main>
-        <section>
-            <h2>My Recent Projects</h2>
-            <p>Here are some of the projects I have been working on:</p>
-            <ul>
-                <li>Project 1: Description of the first project</li>
-                <li>Project 2: Description of the second project</li>
-                <li>Project 3: Description of the third project</li>
-            </ul>
-        </section>
-    </main>
-    <footer><p>&copy; 2026 Families That Game Together</p></footer>
-</body>
 
+    <nav id="site-nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects/Work</a>
+      <a href="about.html">About/Contact</a>
+    </nav>
+
+    <main class="page-main">
+      <section class="card">
+        <h2>My Recent Projects</h2>
+        <p>Here are some of the projects I have been working on:</p>
+        <div class="card-grid">
+          <section class="card">
+            <h3>Project 1</h3>
+            <p>Building a more polished portfolio experience with responsive layouts and engaging visuals.</p>
+          </section>
+          <section class="card">
+            <h3>Project 2</h3>
+            <p>Exploring accessible web design and thoughtful content structure for family-centered storytelling.</p>
+          </section>
+          <section class="card">
+            <h3>Project 3</h3>
+            <p>Refining page organization and styling so the content feels clear at every screen size.</p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer id="page-footer">
+      <p>&copy; 2026 Families That Game Together</p>
+    </footer>
+  </div>
+</body>
 </html>
