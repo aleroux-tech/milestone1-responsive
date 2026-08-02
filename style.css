@@ -107,3 +107,46 @@ p {
     text-align: center;
 }
 
+/* base styles - Mobile First (320px standard layout) */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* Stack sections vertically on small screen to prevent scrolling */
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+}
+
+.card-container > section {
+    background-color: #f4f4f4;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+/* Tablet & Desktop Layout Change using Media Query */
+@media (min-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}
+
+,card-container > section {
+    flex: 1 1 calc(50% - 20=px) ; /* Displays sections in columns side-by-side */
+    }
+}
+
+@media (min0width: 1200px) {
+    .card-container > section {
+        flex: 1 1 calc(25% - 20px); /* Adjusts across 1200 px wide viewports */
+    }
+}
