@@ -118,7 +118,7 @@ body {
     font-family: sans-serif;
 }
 /* Stack sections vertically on small screen to prevent scrolling */
-.cards-container {
+.card-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -129,6 +129,7 @@ body {
     background-color: #f4f4f4;
     padding: 16px;
     border-radius: 8px;
+    flex: 1 1 auto;
 }
 
 /* Tablet & Desktop Layout Change using Media Query */
@@ -138,10 +139,9 @@ body {
     flex-wrap: wrap;
   }
 
-}
-
-.card-container > section {
-    flex: 1 1 calc(50% - 20px); /* Displays sections in columns side-by-side */
+  .card-container > section {
+      flex: 1 1 calc(50% - 20px); /* Displays sections in columns side-by-side */
+  }
 }
 
 @media (min-width: 1200px) {
